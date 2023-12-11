@@ -9,6 +9,13 @@ inquirer
             type: 'input',
             name: 'letters',
             message: 'Please enter up to three letters.',
+            validate: function (input) {
+                if (input.length <= 3) {
+                    return true;
+                } else {
+                    return ("Please enter three characters or less.")
+                }
+            }
         },
         {
             type: 'input',
@@ -32,7 +39,7 @@ inquirer
     .then((data) => {
         const fileName = `${data.letters}.svg`;
         const logo = generateLogo(data);
-        writeFile(`./examples/${fileName}`, logo);
+        writeFile(`./examples/logo.svg`, logo);
     })
 
 
@@ -42,7 +49,7 @@ function writeFile(fileName, data) {
         if (err) {
             console.error(err);
         } else {
-            console.log("Logo successfully created!");
+            console.log("Generated logo.svg!");
         }
     })
 };
