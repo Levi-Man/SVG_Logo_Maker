@@ -36,3 +36,9 @@ I have written the shape render test and the color setting tests for triangle, c
 ## Questions
 For any questions or suggestions, please reach me at github.com/Levi-Man or at indra.levi.manahan@gmail.com.
 
+Screenshot: 
+<img src="https://github.com/Levi-Man/SVG_Logo_Maker/blob/main/assets/Screenshot%202023-12-11%20161126.png" alt="screenshot of app">
+
+Video link: <a src="https://drive.google.com/file/d/1rGgWBAns2xHCoDCDQ8Sqox3rcarsEiq-/view">Video</a>
+
+
